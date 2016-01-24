@@ -1,9 +1,10 @@
 body h1 {
-  color: #FF0000; }
+  color: #2763a1; }
 
 body {
   font-family: Verdana;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  color: #133150; }
 
 #team-members {
   clear: both; }
@@ -11,8 +12,7 @@ body {
     float: left;
     /*border: 1px solid gray;*/
     margin: 10px;
-    padding: 6px;
-    transition: all 1s ease; }
+    padding: 6px; }
     #team-members .member img {
       width: 200px;
       height: 200px;
@@ -24,12 +24,16 @@ body {
       #team-members .member img.main {
         display: block; }
       #team-members .member img:hover {
-        transform: scale(1.1); }
+        transform: scale(1.05); }
     #team-members .member div.name {
-      text-align: center; }
+      text-align: center;
+      transition: all 1s ease; }
     #team-members .member:hover img.bw {
       display: block; }
     #team-members .member:hover img.main {
       display: none; }
+    #team-members .member:hover div.name {
+      transform: translateY(5px);
+      color: #e73d3d; }
 
 /*# sourceMappingURL=style.css.map */
