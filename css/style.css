@@ -7,18 +7,29 @@ body {
 
 #team-members {
   clear: both; }
-
-#team-members .member {
-  float: left;
-  /*border: 1px solid gray;*/
-  margin: 10px;
-  padding: 6px; }
-
-#team-members .member img {
-  width: 200px;
-  height: 200px; }
-
-#team-members .member div.name {
-  text-align: center; }
+  #team-members .member {
+    float: left;
+    /*border: 1px solid gray;*/
+    margin: 10px;
+    padding: 6px;
+    transition: all 1s ease; }
+    #team-members .member img {
+      width: 200px;
+      height: 200px;
+      border-radius: 15px 50px 30px;
+      box-shadow: 5px 5px 5px grey;
+      transition: all 1s ease; }
+      #team-members .member img.bw {
+        display: none; }
+      #team-members .member img.main {
+        display: block; }
+      #team-members .member img:hover {
+        transform: scale(1.1); }
+    #team-members .member div.name {
+      text-align: center; }
+    #team-members .member:hover img.bw {
+      display: block; }
+    #team-members .member:hover img.main {
+      display: none; }
 
 /*# sourceMappingURL=style.css.map */

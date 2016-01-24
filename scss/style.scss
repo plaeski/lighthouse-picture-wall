@@ -12,21 +12,39 @@ body {
 
 #team-members {
   clear: both;
-}
+  .member {
+    float: left;
+    /*border: 1px solid gray;*/
+    margin: 10px;
+    padding: 6px;
+    transition: all 1s ease;
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 15px 50px 30px;
+      box-shadow: 5px 5px 5px grey;
+      transition: all 1s ease;
+      &.bw {
+        display: none;
+      }
+      &.main {
+        display:block;
+      }
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    div.name {
+      text-align: center;  
+    }
+    &:hover {
+      img.bw {
+        display: block;
+      }
+      img.main {
+        display: none;
+      }
+    }  
+  }
 
-#team-members .member {
-  float: left;
-  /*border: 1px solid gray;*/
-  margin: 10px;
-  padding: 6px;
 }
-
-#team-members .member img {
-  width: 200px;
-  height: 200px;
-}
-
-#team-members .member div.name {
-  text-align: center;  
-}
-
